@@ -1,8 +1,14 @@
-import data from "../data.js";
+async function getProducts() {
+  const res = await fetch("../data/products.json");
+  const data = await res.json();
+  console.log(data);
+  return data;
+}
 
 const HomeScreen = {
-  render: () => {
-    const { products } = data;
+  render: async () => {
+    //const { products } = data; -> ES6 property products from data.js
+    let products = await getProducts();
     return `
         <ul class="products">
         ${products
