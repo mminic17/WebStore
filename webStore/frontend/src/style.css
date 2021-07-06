@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 :root {
   --darkgray: #212329;
   --brightred: #f9423d;
@@ -13,13 +14,14 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
 body {
   height: 100vh;
   font: 1.6rem Helvetica, Arial;
-  overflow-y: visible;
+  /* overflow-y: visible; */
   margin: 0;
 }
 
@@ -39,38 +41,13 @@ a:hover {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 10rem 1fr 10rem;
-  height: 100%;
+  grid-template-rows: 7rem 1fr 4rem;
+  min-height: 100vh;
 }
 
 /*Header Section */
 
-/* header {
-  grid-area: header;
-  background-color: rgb(122, 170, 211);
-  color: whitesmoke;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem;
-}
-
-header a {
-  color: whitesmoke;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-header a:hover {
-  color: yellow;
-}
-
-.brand a {
-  font-size: 3rem;
-} */
-
 .nav-container {
-  grid-area: header;
   width: 100%;
   background-color: var(--darkgray);
 }
@@ -138,6 +115,11 @@ header a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10rem 1fr 10rem;
+    overflow-y: hidden;
+  }
   .nav-container {
     position: relative;
   }
@@ -231,6 +213,8 @@ header a:hover {
   }
 }
 
+/*End Of Header Section */
+
 /*Footer Section */
 footer {
   grid-area: footer;
@@ -240,8 +224,49 @@ footer {
   align-items: center;
   color: var(--white);
 }
+/*End Of Footer Section */
 
-/*Products*/
+/*Filtering Section*/
+
+.button_grp {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto 0;
+}
+
+.button_grp ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.button_grp ul li {
+  background-color: var(--white);
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  min-width: 80px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.125);
+}
+
+.button_grp ul li.active,
+.button_grp ul li:hover {
+  background: var(--brightred);
+  color: black;
+}
+/*End Of Filtering Section*/
+
+/*Products Section*/
+
+#main-container {
+  background-color: var(--darkgray);
+}
 
 .products {
   display: flex;
@@ -250,13 +275,15 @@ footer {
   padding: 0;
   margin: 0;
   justify-content: center;
+  align-items: center;
 }
 
 .products li {
   flex: 0 1 30rem;
-  margin: 1rem;
+  margin: 2rem;
   margin-bottom: 0;
-  height: 42rem;
+  height: 50rem;
+  background-color: var(--white);
 }
 
 .product {
@@ -264,13 +291,21 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
+  box-shadow: 1px 5px 15px #ccc;
+  border-radius: 10px;
 }
 
 .product img {
   max-height: 26rem;
-  /*max-width: 22rem;*/
-  /* margin-top: 2rem; */
   width: 100%;
+}
+
+hr {
+  border: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #cf092c;
+  margin: 22px 0 20px;
 }
 
 .product-name {
@@ -288,3 +323,5 @@ footer {
 .product-price span {
   font-size: 1.2rem;
 }
+
+/*End Of Products Section*/
