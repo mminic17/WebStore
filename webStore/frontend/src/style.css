@@ -21,7 +21,6 @@ html {
 body {
   height: 100vh;
   font: 1.6rem Helvetica, Arial;
-  /* overflow-y: visible; */
   margin: 0;
 }
 
@@ -41,7 +40,7 @@ a:hover {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 7rem 1fr 4rem;
+  grid-template-rows: 7rem 1fr 5rem;
   min-height: 100vh;
 }
 

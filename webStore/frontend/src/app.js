@@ -1,8 +1,24 @@
+import { parseUrl } from "./parseUrl.js";
+import Error404Screen from "./screens/Error404Screen.js";
 import HomeScreen from "./screens/HomeScreen.js";
+import ProductDetailsScreen from "./screens/ProductDetailsScreen.js";
 
+const routes = {
+  "/": HomeScreen,
+  "/product/:id": ProductDetailsScreen,
+};
 const router = async () => {
+  const request = parseUrl();
+  const parseReqUrl =
+    (request.resource ? `/${request.resource}` : "/") +
+    (request.id ? `/:id` : "") +
+    (request.action ? `/${request.action}` : "");
+
+  const screen = routes[parseReqUrl] ? routes[parseReqUrl] : Error404Screen.js;
+
   const main = document.getElementById("main-container");
-  main.innerHTML = await HomeScreen.render();
+  main.innerHTML = await screen.render();
+  await screen.after_render();
 };
 
 const menu = document.querySelector("#mobile-menu");
@@ -13,4 +29,7 @@ menu.addEventListener("click", () => {
   menuLinks.classList.toggle("active");
 });
 
+
+
 window.addEventListener("load", router);
+window.addEventListener("hashchange", router);
