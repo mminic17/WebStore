@@ -1,15 +1,27 @@
 async function getProducts() {
-  const res = await fetch("../data/products.json");
-  const data = await res.json();
-  console.log(data);
-  return data;
+  const response = await fetch("http://localhost:3000/api/products", {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  if (!response || !response.ok) {
+    return `<div>Error in getting products!!!</div>`;
+  }
+  const products = await response.json();
+  return products;
 }
 
 async function getCategories() {
-  const res = await fetch("../data/categories.json");
-  const data = await res.json();
-  //console.log(data);
-  return data;
+  const response = await fetch("http://localhost:3000/api/categories", {
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  if (!response || !response.ok) {
+    return `<div>Error in getting categories!!!</div>`;
+  }
+  const categories = await response.json();
+  return categories;
 }
 
 const HomeScreen = {
@@ -23,17 +35,15 @@ const HomeScreen = {
         $(".productFilter").show();
       } else if (attr == "Waistcoats") {
         $("." + attr).show();
-      }
-      else if (attr == "Sweatshirts") {
+      } else if (attr == "Sweatshirts") {
         $("." + attr).show();
-      }
-      else if (attr == "Slippers") {
+      } else if (attr == "Slippers") {
         $("." + attr).show();
-      }
-      else if (attr == "Tracksuits") {
+      } else if (attr == "Tracksuits") {
         $("." + attr).show();
-      }
-      else if (attr == "T-Shirts") {
+      } else if (attr == "T-Shirts") {
+        $("." + attr).show();
+      } else if (attr == "Watches") {
         $("." + attr).show();
       }
     });

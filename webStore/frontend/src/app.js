@@ -18,7 +18,7 @@ const router = async () => {
 
   const main = document.getElementById("main-container");
   main.innerHTML = await screen.render();
-  await screen.after_render();
+  if (screen.after_render) await screen.after_render();
 };
 
 const menu = document.querySelector("#mobile-menu");
@@ -28,8 +28,6 @@ menu.addEventListener("click", () => {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
 });
-
-
 
 window.addEventListener("load", router);
 window.addEventListener("hashchange", router);
