@@ -6,6 +6,8 @@ const products = [
     image: "/images/sorts-1.jpg",
     price: 60,
     brand: "Nike",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 4.5,
     numReviews: 10,
     countInStock: 6,
@@ -17,6 +19,8 @@ const products = [
     image: "/images/sorts-2.jpg",
     price: 55,
     brand: "Adidas",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3,
     numReviews: 106,
     countInStock: 10,
@@ -28,6 +32,8 @@ const products = [
     image: "/images/sorts-3.jpg",
     price: 65,
     brand: "Champion",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 5,
     numReviews: 15,
     countInStock: 20,
@@ -39,6 +45,8 @@ const products = [
     image: "/images/majice-1.jpg",
     price: 30,
     brand: "Nike",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 2.5,
     numReviews: 155,
     countInStock: 90,
@@ -50,6 +58,8 @@ const products = [
     image: "/images/majice-2.jpg",
     price: 25,
     brand: "Champion",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3,
     numReviews: 14,
     countInStock: 5,
@@ -61,6 +71,8 @@ const products = [
     image: "/images/majice-3.jpg",
     price: 40,
     brand: "Adidas",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 1,
     numReviews: 5,
     countInStock: 4,
@@ -72,6 +84,8 @@ const products = [
     image: "/images/majice-4.jpg",
     price: 100,
     brand: "Puma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3.5,
     numReviews: 155,
     countInStock: 90,
@@ -83,6 +97,8 @@ const products = [
     image: "/images/majice-5.jpg",
     price: 120,
     brand: "Londsale",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3.5,
     numReviews: 95,
     countInStock: 90,
@@ -94,6 +110,8 @@ const products = [
     image: "/images/trenerka-1.jpg",
     price: 400,
     brand: "Nike",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3.5,
     numReviews: 95,
     countInStock: 90,
@@ -105,6 +123,8 @@ const products = [
     image: "/images/trenerka-2.jpg",
     price: 450,
     brand: "Adidas",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 4,
     numReviews: 41,
     countInStock: 82,
@@ -116,6 +136,8 @@ const products = [
     image: "/images/trenerka-3.jpg",
     price: 380,
     brand: "Champion",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 4.5,
     numReviews: 24,
     countInStock: 82,
@@ -127,6 +149,8 @@ const products = [
     image: "/images/sat-1.jpg",
     price: 999,
     brand: "Rolex",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 4.5,
     numReviews: 24,
     countInStock: 82,
@@ -138,6 +162,8 @@ const products = [
     image: "/images/sat-2.jpg",
     price: 689,
     brand: "Fosil",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3,
     numReviews: 36,
     countInStock: 48,
@@ -149,6 +175,8 @@ const products = [
     image: "/images/carape-1.jpg",
     price: 10,
     brand: "Nike",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3,
     numReviews: 36,
     countInStock: 48,
@@ -160,6 +188,8 @@ const products = [
     image: "/images/carape-2.jpg",
     price: 10,
     brand: "Adidas",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 4.5,
     numReviews: 36,
     countInStock: 48,
@@ -171,6 +201,8 @@ const products = [
     image: "/images/carape-3.jpg",
     price: 12,
     brand: "Champion",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3,
     numReviews: 36,
     countInStock: 48,
@@ -182,6 +214,8 @@ const products = [
     image: "/images/carape-4.jpg",
     price: 11,
     brand: "Puma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3.5,
     numReviews: 36,
     countInStock: 48,
@@ -193,6 +227,8 @@ const products = [
     image: "/images/dukserice-1.jpg",
     price: 30,
     brand: "Puma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3.5,
     numReviews: 36,
     countInStock: 48,
@@ -204,6 +240,8 @@ const products = [
     image: "/images/dukserice-2.jpg",
     price: 40,
     brand: "Adidas",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 5,
     numReviews: 36,
     countInStock: 48,
@@ -215,6 +253,8 @@ const products = [
     image: "/images/dukserice-3.jpg",
     price: 45,
     brand: "Nike",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 1.5,
     numReviews: 36,
     countInStock: 48,
@@ -226,6 +266,8 @@ const products = [
     image: "/images/dukserice-4.jpg",
     price: 32,
     brand: "Puma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 0.5,
     numReviews: 36,
     countInStock: 48,
@@ -237,6 +279,8 @@ const products = [
     image: "/images/papuce-1.jpg",
     price: 88,
     brand: "Puma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 0.5,
     numReviews: 36,
     countInStock: 48,
@@ -248,6 +292,8 @@ const products = [
     image: "/images/papuce-2.jpg",
     price: 88,
     brand: "Puma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 0.5,
     numReviews: 36,
     countInStock: 48,
@@ -259,6 +305,8 @@ const products = [
     image: "/images/papuce-3.jpg",
     price: 88,
     brand: "Puma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 0.5,
     numReviews: 36,
     countInStock: 48,
@@ -270,6 +318,8 @@ const products = [
     image: "/images/prsluci-1.jpg",
     price: 88,
     brand: "Puma",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 0.5,
     numReviews: 36,
     countInStock: 48,
@@ -281,6 +331,8 @@ const products = [
     image: "/images/prsluci-2.jpg",
     price: 77,
     brand: "Adidas",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3.5,
     numReviews: 36,
     countInStock: 48,
@@ -292,6 +344,8 @@ const products = [
     image: "/images/prsluci-3.jpg",
     price: 66,
     brand: "Nike",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aperiam itaque exercitationem impedit consequatur possimus asperiores error voluptatum perferendis. Placeat illum pariatur esse eos blanditiis molestiae deserunt doloribus voluptates nemo.",
     rating: 3,
     numReviews: 36,
     countInStock: 48,

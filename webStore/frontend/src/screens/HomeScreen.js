@@ -1,3 +1,5 @@
+import Rating from "../resources/Rating.js";
+
 async function getProducts() {
   const response = await fetch("http://localhost:3000/api/products", {
     headers: {
@@ -49,7 +51,6 @@ const HomeScreen = {
     });
   },
   render: async () => {
-    //const { products } = data; -> ES6 property products from data.js
     let products = await getProducts();
     let categories = await getCategories();
     return `
@@ -77,9 +78,14 @@ const HomeScreen = {
                 <img src="${product.image}" alt="${product.name}" />
             </a>
             <div class="product-name">
-                <a href="/#/product/${product._id}"><h1> ${product.name} </h1></a>
+                <a href="/#/product/${product._id}"><h1> ${
+              product.name
+            } </h1></a>
             </div>
             <hr />
+            <div class="product-rating">
+              ${Rating.render(product.rating, product.numReviews)}
+            </div>
             <div class="product-brand">
                <h2> ${product.brand} </h2>
             </div>

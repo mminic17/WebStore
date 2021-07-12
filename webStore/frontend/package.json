@@ -11,6 +11,8 @@
   "devDependencies": {
     "live-server": "^1.2.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
   "description": ""
 }
