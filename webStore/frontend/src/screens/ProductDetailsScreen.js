@@ -3,6 +3,12 @@ import { getProductById } from "../api.js";
 import Rating from "../resources/Rating.js";
 
 const ProductDetailsScreen = {
+  after_render: async () => {
+    const request = parseUrl();
+    document.getElementById("addToCart").addEventListener("click", function () {
+      document.location.hash = `/cart/${request.id}`;
+    });
+  },
   render: async () => {
     const request = parseUrl();
     const product = await getProductById(request.id);
@@ -11,8 +17,8 @@ const ProductDetailsScreen = {
     }
     return `
     <div class="product-content">
-      <div class="back-to-result">
-        <a href="/#/"><< Back to Result</a>
+      <div class="back-to-homepage">
+        <a href="/#/"><< Back to Home</a>
       </div>
       <div class="product-details">
       <div class="details">

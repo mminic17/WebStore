@@ -15,3 +15,9 @@ export const getProductById = async (id) => {
     return { error: err.message };
   }
 };
+
+export const re_render = async (component) => {
+  document.getElementById("main-container").innerHTML =
+    await component.render();
+  await component.after_render();
+};
