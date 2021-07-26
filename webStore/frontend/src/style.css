@@ -34,18 +34,56 @@ a:hover {
 }
 
 button {
+  cursor: pointer;
+}
+
+input,
+button {
   font: 3rem;
   padding: 1rem;
   border: 0.2rem, (var(--darkgray)) solid;
   border-radius: 0.5rem;
 }
 
+input:hover,
 button:hover {
   border: 0.2rem black solid;
 }
 
 button.primary {
   background-color: var(--brightred);
+}
+
+.error {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--darkgray);
+}
+
+.error > div {
+  background-color: white;
+  color: black;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 40rem;
+}
+
+.error > div > * {
+  margin: 2rem;
+}
+
+.error.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
 }
 
 .grid-container {
@@ -600,3 +638,49 @@ hr {
 }
 
 /*End Of Shopping Cart*/
+
+/*Login Screen*/
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-items {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  padding: 2rem;
+  border: 0.1rem #cf092c solid;
+  border-radius: 0.8rem;
+  list-style-type: none;
+}
+
+.form-items li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.form-items label {
+  margin-bottom: 1rem;
+}
+
+.form-items a {
+  color: var(--white);
+}
+
+.form-items a:hover {
+  color: var(--lightred);
+}
+
+@media screen and (max-width: 767px) {
+  .form-items {
+    width: 32rem;
+  }
+}
+
+/*End of Login Screen*/

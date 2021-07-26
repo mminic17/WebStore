@@ -40,7 +40,7 @@ function removeFromCart(id) {
 }
 
 const ShoppingCartScreen = {
-  after_render: async () => {
+  after_render: () => {
     const quantities = document.getElementsByClassName("quantity-select");
     Array.from(quantities).forEach((quantity) => {
       quantity.addEventListener("change", (e) => {
@@ -126,7 +126,6 @@ const ShoppingCartScreen = {
           <a href="#">Proceed to Checkout</a>
       </div>
     </div>
-    <div class="pagenumbers" id="pagination"></div>
       </div>
       
     `;

@@ -27,7 +27,7 @@ async function getCategories() {
 }
 
 const HomeScreen = {
-  after_render: () => {
+  after_render: async () => {
     $(".buttonC").click(function () {
       let attr = $(this).attr("data-li");
       $(".buttonC").removeClass("active");

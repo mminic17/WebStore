@@ -21,6 +21,7 @@
     <script type="module" src="app.js"></script>
   </head>
   <body>
+    <div class="error" id="message-error"></div>
     <div class="grid-container">
       <div class="nav-container">
         <div class="navbar">
@@ -30,15 +31,7 @@
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-          <ul class="nav-menu">
-            <li><a href="/#/" class="nav-links">Home</a></li>
-            <li><a href="/#/signin" class="nav-links">Sign In</a></li>
-            <li>
-              <a href="/#/cart" class="nav-links nav-links-btn"
-                >Shopping Cart</a
-              >
-            </li>
-          </ul>
+          <ul class="nav-menu" id="nav-menu"></ul>
         </div>
       </div>
       <main id="main-container"></main>
@@ -46,4 +39,3 @@
     </div>
   </body>
 </html>
-
