@@ -36,7 +36,24 @@ const Register = {
         var repassword = document.getElementById("repassword").value;
 
         /*regex expression */
+        const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!regexEmail.test(email)) {
+          showMessageError("Please insert valid email.");
+          return;
+        }
 
+        if (password !== repassword) {
+          showMessageError(
+            "Repassword is not in the same format like first one."
+          );
+          return;
+        }
+        const regexPassword = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+        //  /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})$/;
+        if (!regexPassword.test(password)) {
+          showMessageError("Password is not valid.");
+          return;
+        }
         const data = await register({
           name: document.getElementById("name").value,
           email: document.getElementById("email").value,
