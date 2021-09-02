@@ -2,12 +2,25 @@ import { parseUrl } from "../parseUrl.js";
 import { getProductById } from "../api.js";
 import Rating from "../resources/Rating.js";
 
+const getUserFromLocalStorage = () => {
+  return localStorage.getItem("userInformation")
+    ? JSON.parse(localStorage.getItem("userInformation"))
+    : { name: "", email: "", username: "", password: "" };
+};
+
 const ProductDetailsScreen = {
   after_render: async () => {
     const request = parseUrl();
-    document.getElementById("addToCart").addEventListener("click", function () {
-      document.location.hash = `/cart/${request.id}`;
-    });
+    const { name } = getUserFromLocalStorage();
+    if (name) {
+      document
+        .getElementById("addToCart")
+        .addEventListener("click", function () {
+          document.location.hash = `/cart/${request.id}`;
+        });
+    } else {
+      document.location.hash = `/login`;
+    }
   },
   render: async () => {
     const request = parseUrl();
