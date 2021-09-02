@@ -11,7 +11,7 @@ const getUserFromLocalStorage = () => {
 const ProductDetailsScreen = {
   after_render: async () => {
     const request = parseUrl();
-    const { name } = getUserFromLocalStorage();
+    const name = getUserFromLocalStorage().name;
     if (name) {
       document
         .getElementById("addToCart")

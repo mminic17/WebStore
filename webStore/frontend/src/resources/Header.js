@@ -6,7 +6,7 @@ const getUserFromLocalStorage = () => {
 const Header = {
   after_render: async () => {},
   render: async () => {
-    const { name } = getUserFromLocalStorage();
+    const name = getUserFromLocalStorage().name;
     return `
         <li>
             <a href="/#/" class="nav-links">Home</a>
